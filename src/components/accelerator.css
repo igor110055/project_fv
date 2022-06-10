@@ -1,0 +1,30 @@
+.acc_content {
+    padding-block: 3.5rem;
+
+    border-bottom: 1px solid var(--tertiary-black);
+}
+
+.acc_content:last-of-type {
+    border-bottom: 0;
+}
+
+.acc_institution {
+    color: var(--theme-color);
+    font-weight: 800;
+    margin-bottom: 3.625rem;
+}
+
+.acc_section {
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+.acc_details {
+    display: flex;
+    flex-direction: column;
+    gap: 1.563rem;
+}
+
+.acc_info {
+    line-height: 148%;
+}

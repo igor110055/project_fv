@@ -1,0 +1,40 @@
+.partners_pn_wrapper {
+    padding-top: 2.625rem;
+    padding-bottom: 5rem;
+}
+
+.partners_act_wrapper,
+.partners_hct_wrapper {
+    padding-top: 5.625rem;
+}
+
+.act_image {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
+
+.act_subtext_content {
+    display: flex;
+    align-items: center;
+    gap: 0.1rem;
+}
+
+.act_subtext {
+    flex: auto;
+    color: var(--theme-color);
+    font-weight: 300;
+    text-align: center;
+}
+
+.act_line {
+    flex: 1;
+    background-color: var(--theme-color);
+    display: inline-block;
+    height: 1px;
+}
+
+.act_list_wrapper {
+    margin-top: 1.875rem;
+}

@@ -1,0 +1,20 @@
+.portfolio_title {
+    padding-top: 4.313rem;
+    padding-bottom: 1.875rem;
+    border-bottom:1px solid var(--primary-black);
+}
+
+
+.portfolio_grid_wrapper {
+    padding-top: 2.983rem;
+    padding-bottom: 6.375rem;
+}
+
+.portfolio_desc_wrapper {
+    padding-block: 2.5rem;
+}
+
+.portfolio_text {
+    line-height: 1.8rem;
+    text-align: justify;
+}

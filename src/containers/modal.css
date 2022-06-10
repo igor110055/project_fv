@@ -1,0 +1,38 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    backdrop-filter: blur(6px);
+    background-color: rgba(0, 0, 0, 0.3);
+
+    z-index: 15;
+}
+
+.modal_wrapper {
+    background-color: white;
+    width: 58%;
+    height: 100%;
+    margin-left: auto;
+}
+
+/* animation */
+.modal-enter .modal_wrapper {
+    opacity: 0;
+}
+
+.modal-enter-active .modal_wrapper {
+    opacity: 1;
+    transition: opacity 200ms;
+}
+
+.modal-exit .modal_wrapper {
+    opacity: 1;
+}
+
+.modal-exit-active .modal_wrapper {
+    opacity: 0;
+    transition: opacity 200ms;
+}
+  

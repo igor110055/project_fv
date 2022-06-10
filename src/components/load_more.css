@@ -1,0 +1,22 @@
+.loadmore_content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+    padding-block: 1rem;
+    border: 1px solid var(--secondary-black)
+}
+
+.loadmore_content:hover {
+    border: 1px solid var(--theme-color);
+    cursor: pointer;
+}
+
+.loadmore_content:hover .loadmore_text {
+    color: var(--theme-color);
+}
+
+.loadmore_content:hover path {
+    fill: var(--theme-color);
+}

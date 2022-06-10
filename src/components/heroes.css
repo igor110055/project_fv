@@ -1,0 +1,47 @@
+.heroes_content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.125rem;
+}
+
+.heroes_line {
+    display: inline-block;
+    width: 127px;
+    height: 4px;
+    background-color: var(--theme-color);
+
+    vertical-align: middle;
+    margin-inline:1rem;
+}
+
+.heroes_dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: var(--theme-color);
+}
+
+@media screen and (max-width: 768px) {
+    .heroes_line {
+        width: 70px;
+        margin-inline: 0.75rem;
+    }
+
+    .heroes_dot {
+        width: 8px;
+        height: 8px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .heroes_line {
+        width: 60px;
+        height: 3px;
+        margin-inline: 0.5rem;
+    }
+
+    .heroes_dot {
+        width: 6px;
+        height: 6px;
+    }
+}

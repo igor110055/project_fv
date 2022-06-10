@@ -1,0 +1,16 @@
+.main_wrapper {
+    padding-top: 80px;
+}
+
+.main_content {
+    margin-inline: auto;
+
+    width: 76vw;
+    max-width: 1110px;
+}
+
+@media screen and (max-width: 768px) {
+    .main_content {
+        width: 84vw;
+    }
+}

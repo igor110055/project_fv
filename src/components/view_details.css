@@ -1,0 +1,21 @@
+.vd_content {
+    display: flex;
+    align-items: center;
+}
+
+.home_vd_content {
+    gap: 1.5rem;
+}
+
+.normal_vd_content {
+    gap: 1rem;
+}
+
+.normal_vd_content path {
+    fill: var(--theme-color);
+}
+
+.vd_text {
+    color: var(--theme-color);
+}
+
