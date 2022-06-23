@@ -43,6 +43,7 @@
 
 .search_trend_items {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
 }
 
@@ -50,6 +51,7 @@
     font-size: 1rem;
     border-bottom: 1px solid var(--primary-black);
     margin-right: 2.625rem;
+    margin-bottom: 1rem;
 }
 
 .search_trend_item:hover {

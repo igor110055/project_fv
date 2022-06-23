@@ -1,0 +1,127 @@
+.post-list__item {
+    flex: 0 1 100%;
+    margin-bottom: 1.7rem;
+
+    position: relative;
+}
+
+@media screen and (min-width: 641px) {
+    .post-list__item {
+        flex-basis: calc((100% / 2) - (2.625rem * (1 / 2)));
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .post-list__item {
+        flex-basis: calc((100% / 3) - (2.625rem * (2 / 3)));
+    }
+}
+
+/* .post-list__item-content-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; 
+}
+*/
+.post-list__item-link-wrapper {
+    cursor: pointer;
+}
+
+.post-list__item-image-wrapper {
+    background-color: #e8e8e8;
+    width: 100%;
+    padding-top:54%;
+    overflow: hidden;
+
+    margin-bottom: 1rem;
+
+    position: relative;
+}
+
+.post-list__item-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+/* research & hackathon starts here */
+.research-image-wrapper .post-list__item-image,
+.hackathon-image-wrapper .post-list__item-image {
+    transform: scale(1);
+    transition: all 0.3s;
+}
+
+.research-image-wrapper:hover .post-list__item-image,
+.hackathon-image-wrapper:hover .post-list__item-image {
+    transform: scale(1.05);
+    transition: all 0.3s;
+}
+/* research & hackathon ends here */
+
+/* newsnevents starts here*/
+.newsnevents-image-wrapper {
+    position: relative;
+}
+
+.newsnevents-icon-play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+
+    transform: translate(-50%, -50%) scale(1);
+    transition: all 0.3s;
+}
+
+.newsnevents-icon-play svg {
+    display: block;
+}
+
+.newsnevents-image-wrapper:hover .newsnevents-icon-play {
+    transform: translate(-50%, -50%) scale(1.2);
+}
+/* newsnevents ends here */
+
+.post-list__item-headline {
+    font-weight: 700;
+    width: 100%;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    color: var(--primary-black);
+    transition: color 0.1s linear;
+}
+
+.post-list__item-headline:hover {
+    color: var(--theme-color);
+    transition: color 0.1s linear;
+}
+
+.post-list__item-description-wrapper {
+    margin-top: 0.625rem;
+    margin-bottom: 0.57rem;
+
+    width: 100%;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+
+}
+
+.post-list__item-description {
+    color: var(--secondary-black);
+    font-size: 0.938rem;
+    line-height: 1.188rem;
+}
+
+.post-list__item-byline {
+    font-size: 0.938rem;
+}

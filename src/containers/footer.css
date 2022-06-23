@@ -1,19 +1,18 @@
 .footer_wrapper {
-    width: 76vw;
-    height: 100%;
-    max-width: 1110px;
-
-    margin-inline: auto;
+    padding-inline: clamp(1.375rem, 1.2rem + 0.89vw, 2rem);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 992px) {
     .footer_wrapper {
-        width: 84vw;
+        margin-inline: auto;
+
+        width: 76vw;
+        max-width: 1110px;
     }
 }
 
 .footer_content {
-    padding-top: 10rem;
+    padding-top: 8rem;
     padding-bottom: 5rem;
 }
 
@@ -150,4 +149,13 @@
 
 .footer_link_wrapper a:hover {
     color: var(--theme-color);
+}
+
+.footer-logo {
+    width: 7.375rem;
+    height: 1.5rem;
+
+    background-image: url("../assets/svg/footer_logo.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
 }

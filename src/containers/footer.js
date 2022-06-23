@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { ReactComponent as Logo } from "../assets/svg/footer_logo.svg";
 import { ReactComponent as Medium } from "../assets/svg/link_medium.svg";
 import { ReactComponent as Twitter } from "../assets/svg/link_twitter.svg";
 import { ReactComponent as Mail } from "../assets/svg/link_email.svg";
@@ -28,21 +27,32 @@ export default function Footer() {
                     </div>
 
                     <div className="footer_brand_info">
-                        <Logo />
+                        <div className="footer-logo"></div>
+                        {/* <Logo /> */}
                         <div className="footer_links">
-                            <Medium />
-                            <Twitter />
-                            <Mail />
+                            <span onClick={() => window.open("https://foresightventures.medium.com/", "_blank")}>
+                                <Medium />
+                            </span>
+                            <span onClick={() => window.open("https://twitter.com/ForesightVen", "_blank")}>
+                                <Twitter />
+                            </span>
+                            <a href="mailto: fv@foresightventures.com">
+                                <Mail />
+                            </a>
                         </div>
                     </div>
 
                     <div className="footer_info_wrapper">
                         <div className="footer_link_wrapper">
-                            <Link to="/contact">Contact us</Link>
+                            
+                            <Link to="/more/contact">Contact us</Link>
+                            <span>|</span>
+                            <Link to="/more/team">Team</Link>
+                            <span>|</span>
+                            <Link to="/more/jobs">Jobs</Link>
                             <span>|</span>
                             <Link to="/tos-privacy">Terms of Use & Privacy</Link>
-                            <span>|</span>
-                            <Link to="/jobs">Jobs</Link>
+
                         </div>
 
                         <div className="footer_copyright">

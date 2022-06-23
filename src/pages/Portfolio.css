@@ -1,9 +1,19 @@
+.portfolio__text-wrapper {
+    margin-top: 5rem;
+}
+
+.portfolio__text {
+    font-size: 0.875rem;
+    color: var(--secondary-black);
+    line-height: 148%;
+}
+
+/* 
 .portfolio_title {
     padding-top: 4.313rem;
     padding-bottom: 1.875rem;
     border-bottom:1px solid var(--primary-black);
 }
-
 
 .portfolio_grid_wrapper {
     padding-top: 2.983rem;
@@ -17,4 +27,5 @@
 .portfolio_text {
     line-height: 1.8rem;
     text-align: justify;
-}
+} 
+*/

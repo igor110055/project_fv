@@ -1,20 +1,19 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import Main from "../containers/main";
-import Footer from "../containers/footer";
+import Layout from "../components/layout";
 
 import Heroes from "../components/heroes";
-import LoadMore from "../components/load_more";
+import Button from "../components/button";
+import Marquee from "../components/marquee";
 
-import { articles } from "../assets/data/articles";
+import { research } from "../assets/data/content-research";
 import { ReactComponent as Arrow } from "../assets/svg/main_article_arrow.svg";
 import "./Home.css";
 
 
 export default function Home() {
     return (
-        <React.Fragment>
-            <Main>
+        <Layout>
                 <div className="home_heroes_wrapper">
                     <Heroes />
                 </div>
@@ -22,30 +21,31 @@ export default function Home() {
                 <div className="home_research_wrapper">
                     <div className="rs_header_wrapper bd_bt_black">
                         <h2 className="rs_title">Latest Research</h2>
-                        <NavLink to="/research">
+                        <NavLink to="/content/research">
                             <h4 className="rs_rm">Read More</h4>
                         </NavLink>
                     </div>
 
                     <div>
-                        {articles.slice(0, 3).map((article) => (
+                        {research.slice(0, 3).map((article) => (
                             <Aritcle {...article} key={article.id} />
                         ))}
                     </div>
 
                     <div className="home_ld_wrapper">
-                        <LoadMore />
+                        <Button text="load more" />
                     </div>
                 </div>
-            </Main>
 
-            <Footer />
-        </React.Fragment>
+                <div className="home-marquee">
+                    <Marquee />
+                </div>
+        </Layout>
     );
 }
 
 
-function Aritcle({ headline, author, published, image, id }) {
+function Aritcle({ headline, author, published, image, url }) {
     return (
         <div className="home_article_wrapper">
             <div className="article_info">
@@ -57,11 +57,10 @@ function Aritcle({ headline, author, published, image, id }) {
 
             </div>
             
-            <NavLink className="article_more" to={`/research/${id}`}>
+            <div className="article_more" onClick={() => window.open(url, "_blank")}>
                 <p>Read the full article</p>
                 <Arrow />
-                
-            </NavLink>
+            </div>
 
             <img className="article_img" src={image} alt={headline}></img>
 

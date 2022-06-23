@@ -1,0 +1,24 @@
+.getro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding-top: 4rem;
+}
+
+.getro__text {
+    color: var(--secondary-black);
+    font-weight: 500;
+}
+
+.getro__logo {
+    width: 16rem;
+    height: 2.625rem;
+
+    background-image: url("../assets/svg/more-jobs-getro.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    margin-left: 1.625rem;
+}
