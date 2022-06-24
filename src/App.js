@@ -34,7 +34,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/content/research" element={<ContentResearch />} />
-        <Route path="/content/news&events" element={<ContentNewsNEvents />} />
+        <Route path="/content/newsnevents" element={<ContentNewsNEvents />} />
         <Route path="/build/accelerator" element={<BuildAccelerator />} />
         <Route path="/build/hackathon" element={<BuildHackathon />} />
         <Route path="/build/partner" element={<BuildPartner />} />
