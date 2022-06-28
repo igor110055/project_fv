@@ -16,7 +16,7 @@ export default function BuildHackathon() {
             <section className="build-hackathon-section">
                 <div className="hackathon-hero">
                     <h3>Giving us your MVP, let's make it big</h3>
-                    <p>Even if you only have a one-person team, we still believe in Your Potential to become the next big unicorn.</p>
+                    <p>Even if you only have an one-person team, we still believe in Your Potential to become the next big unicorn.</p>
                 </div>
 
                 <div className="post-list">

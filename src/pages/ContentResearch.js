@@ -3,7 +3,6 @@ import Layout from "../components/layout";
 import Title from "../components/title";
 import Post from "../components/post";
 import Button from "../components/button";
-import Marquee from "../components/marquee";
 
 import { research } from "../assets/data/content-research.js";
 import "./ContentResearch.css";
@@ -34,10 +33,6 @@ export default function ContentResearch() {
                         <li className="pagi_box">4</li>
                         <li className="pagi_box">5</li>
                     </ul>
-                </div>
-
-                <div className="research-marquee">
-                    <Marquee />
                 </div>
 
             </section>

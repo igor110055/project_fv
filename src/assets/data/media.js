@@ -1,11 +1,14 @@
-// import Coinkolik from "../images/meida/Coinkolik.jpg";
-// import BTCHaber from "../images/meida/BTCHaber.jpg";
-// import CoinBilgi from "../images/meida/COINBiLGi.jpg";
-// import ForesightNews from "../images/meida/ForesightNews.jpg";
-
 export const media = [
     {
         "id": 1,
+        "headline": "Foresight News",
+        "description": "Foresight News, a leading think-tank for transformative crypto media.",
+        "url": "https://foresightnews.pro/",
+        "address": "foresightnews.pro",
+        "image": require("../images/media/ForesightNews.jpg"),        
+    },
+    {
+        "id": 2,
         "headline": "Coinkolik",
         "description": "Coinkolik.com is the fastest growing cryptocurrency news site of Turkey!",
         "url": "https://www.coinkolik.com/",
@@ -27,13 +30,5 @@ export const media = [
         "url": "https://www.coinbilgi.net/",
         "address": "coinbilgi.net",
         "image": require("../images/media/COINBiLGi.jpg"),        
-    },
-    {
-        "id": 4,
-        "headline": "Foresight News",
-        "description": "Foresight News, a leading think-tank for transformative crypto media.",
-        "url": "https://foresightnews.pro/",
-        "address": "foresightnews.pro",
-        "image": require("../images/media/ForesightNews.jpg"),        
-    },
+    }
 ]
